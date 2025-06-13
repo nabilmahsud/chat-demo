@@ -25,6 +25,9 @@ import { UserModule } from './user/user.module';
         database: configService.get('DB_NAME'),
         autoLoadEntities: true,
         synchronize: true,
+        ssl: {
+          rejectUnauthorized: false,
+        },
       }),
     }),
     VendorModule,
