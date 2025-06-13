@@ -26,11 +26,13 @@ yarn start                     # Run this command to start the application
 - Once the server is running, open your browser and navigate to http://localhost:8000/api
 - This will open the Swagger UI where you can interactively test all available API endpoints.
 
-![image](https://github.com/user-attachments/assets/9f99b226-bf7c-412a-bfe8-f3683337d4d7)
+![image](https://github.com/user-attachments/assets/883e6689-1951-4412-9bd6-ef65767152ca)
+
 
 # 📦 Environment Configuration with .env
 
-![image](https://github.com/user-attachments/assets/9c496f7e-2d59-4cee-80cf-502ac4b95c18)
+![image](https://github.com/user-attachments/assets/3d9d3896-19af-4912-9a49-a09093215531)
+
 It contains the following environment variables.
 
 ```
@@ -48,7 +50,8 @@ JWT_SECRET=secret
 ```
 
 These environment variables are accessed by injecting the ConfigService where required through dependency injection.
-![image](https://github.com/user-attachments/assets/2e9d42c9-f78d-4b4e-85f4-660296c131d7)
+![image](https://github.com/user-attachments/assets/f6f31644-d2f6-4418-8a44-b8d54ca55849)
+
 
 # 📁 Project Structure
 
@@ -81,7 +84,8 @@ One of the primary design decisions was to implement a layered architecture to e
 
 This structure improves maintainability, testability, and scalability, allowing each layer to evolve independently.
 
-![image](https://github.com/user-attachments/assets/6930a2a2-50fa-462d-b358-b76eccb61a1f)
+![image](https://github.com/user-attachments/assets/ac4e12b5-4117-4978-90a6-55bc22f735c2)
+
 
 **2. Adapter Pattern for LLMS**
 
@@ -95,7 +99,8 @@ This follows the Open/Closed Principle from SOLID:
 
 **"Software entities should be open for extension but closed for modification."**
 
-![image](https://github.com/user-attachments/assets/6bfdc978-573d-4378-a13e-f551de0f93a6)
+![image](https://github.com/user-attachments/assets/6b530377-9d4f-4135-8900-d2826992df48)
+
 
 **3. Dependency Injection (DI)**
 
@@ -105,7 +110,8 @@ NestJS’s built-in Dependency Injection system was heavily utilized for managin
 - This ensures singletons by default, services are instantiated once and reused, saving memory and improving performance.
 - DI promotes loose coupling, testability, and clean architecture.
 
-![image](https://github.com/user-attachments/assets/10ad47c6-2d14-4fc2-98f1-cce785b05416)
+![image](https://github.com/user-attachments/assets/b9d6b528-ec33-46ce-bd28-3f513056918a)
+
 
 # 📄 API Documentation with Swagger
 
