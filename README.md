@@ -1,4 +1,5 @@
 # 🚀 Installation & Setup Instructions
+
 **Prerequisites**
 
 - PostgreSQL must be installed and running.
@@ -11,14 +12,13 @@ You need to provide database credentials and API keys via a .env file, refer to 
 **Install Dependencies**
 
 ```
-npm install                   # Navigate to the project directory and run this command
-npm install --force           # If you encounter issues, then run this command
+yarn install                   # Navigate to the project directory and
 ```
 
 **Start the application**
 
 ```
-npm start                     # Run this command to start the application
+yarn start                     # Run this command to start the application
 ```
 
 **Test the API using Swagger**
@@ -28,11 +28,11 @@ npm start                     # Run this command to start the application
 
 ![image](https://github.com/user-attachments/assets/9f99b226-bf7c-412a-bfe8-f3683337d4d7)
 
-
-
 # 📦 Environment Configuration with .env
+
 ![image](https://github.com/user-attachments/assets/9c496f7e-2d59-4cee-80cf-502ac4b95c18)
 It contains the following environment variables.
+
 ```
 DB_USERNAME=postgres
 DB_PASSWORD=123
@@ -46,13 +46,12 @@ OPENAI_API_KEY=sk-proj-...
 
 JWT_SECRET=secret
 ```
+
 These environment variables are accessed by injecting the ConfigService where required through dependency injection.
 ![image](https://github.com/user-attachments/assets/2e9d42c9-f78d-4b4e-85f4-660296c131d7)
 
-
-
-
 # 📁 Project Structure
+
 ```
 src/
 ├── auth/           # Handles authentication (login, register)
@@ -70,7 +69,6 @@ src/
 .env                # Environment variable file
 ```
 
-
 # 🔑 Key Design Decisions
 
 **1. Layered Architecture**
@@ -84,7 +82,6 @@ One of the primary design decisions was to implement a layered architecture to e
 This structure improves maintainability, testability, and scalability, allowing each layer to evolve independently.
 
 ![image](https://github.com/user-attachments/assets/6930a2a2-50fa-462d-b358-b76eccb61a1f)
-
 
 **2. Adapter Pattern for LLMS**
 
@@ -100,7 +97,6 @@ This follows the Open/Closed Principle from SOLID:
 
 ![image](https://github.com/user-attachments/assets/6bfdc978-573d-4378-a13e-f551de0f93a6)
 
-
 **3. Dependency Injection (DI)**
 
 NestJS’s built-in Dependency Injection system was heavily utilized for managing service and class instances.
@@ -114,6 +110,3 @@ NestJS’s built-in Dependency Injection system was heavily utilized for managin
 # 📄 API Documentation with Swagger
 
 This project integrates Swagger for automatic API documentation and testing. Swagger provides a user-friendly web interface where you can view all the available endpoints, inspect their request/response schemas, and interact with the backend without needing an external client like Postman.
-
-
-
