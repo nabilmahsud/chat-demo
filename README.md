@@ -1,3 +1,16 @@
+# 🚀 Demo Introduction
+- This is a simple AI-powered Vendor Chatbot built with NestJS, designed to let users ask natural language questions about vendors stored in a PostgreSQL database. By integrating Gemini and OpenAI, the system extracts relevant vendor data based on the user's prompt and uses an LLM to generate intelligent responses. For example, users can ask, “What is the email of Papertrail vendor?” and the chatbot will provide the correct answer using the data stored in the database.
+  
+- Here is the data in the Vendor Database, you can ask questions related to these vendors 
+![image](https://github.com/user-attachments/assets/39782892-ee41-45bb-b66b-d23c823667c6)
+- Now you can ask questions through Chat endpoint such as
+![image](https://github.com/user-attachments/assets/929551b6-94a5-4979-aa13-93996f204aa5)
+- And you will get responses such as
+![image](https://github.com/user-attachments/assets/2e71221c-feaf-4b12-8eac-f8be9b0ad070)
+
+
+
+
 # 🚀 Installation & Setup Instructions
 
 **Prerequisites**
